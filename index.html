@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="description" content="Manasi Thonte - Machine Learning Engineer & Data Scientist Portfolio">
+    <title>Manasi Thonte's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/312fa361de.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<nav>
+    <img src="Images/Logo.png" class="logo" alt="Manasi Thonte Logo">
+    <ul id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Work Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>        
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <i class="fas fa-times" id="close-menu" aria-label="Close menu"></i>
+    </ul>
+    <i class="fas fa-bars" id="menu-icon" aria-label="Open menu"></i>
+</nav>
+
 <div id="header">
     <div class="container">
-        <nav>
-            <img src="Images/logo.png" class="logo">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>        
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
         <div class="header-text">
-            <p>Data Scientist | Software Developer</p>
-            <h1>Hi, I am <span>Manasi</span> Thonte.</h1>
-            <h2>A passionate explorer of data and technology!</h2>
-            <p1>I am Graduate Student at University Of Southern California.</p1>
+            <p class="fade-in">Software Engineer (ML Systems)| Data Scientist</p>
+            <h1 class="fade-in-up">Hi, I am <span>Manasi</span> Thonte.</h1>
+            <h2 class="fade-in-up delay-1">A passionate explorer of AI, ML, and data-driven solutions!</h2>
+            <p class="subtitle fade-in-up delay-2">Master’s graduate in Applied Data Science from the University of Southern California with a strong foundation in Data Structures, Algorithms, and machine learning systems. I enjoy building scalable AI-driven applications and optimizing distributed infrastructure.
+
+                Seeking full-time Software Engineering or Machine Learning roles where I can contribute to impactful, production-scale systems.</p>
+            
+            <div class="header-buttons fade-in-up delay-2">
+                <a href="Images/Resume_.pdf" target="_blank" rel="noopener noreferrer" class="btn">View Resume</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
         </div>
     </div>    
 </div>
@@ -33,169 +47,366 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="Images/about.jpg">
+                <img src="Images/about.JPG" alt="Manasi Thonte profile picture" loading="lazy">
             </div>
             <div class="about-col-2">
-                <h1>About Me</h1>
-                <p>I am currently pursuing a Master's in Applied Data Science at <span> University Of Southern California </span> with a CGPA of 3.82/4. I have hands-on experience in machine learning, data analysis, and frontend development, showcasing expertise in both data science and software development.</p>
-                <p1><br>I have pursued my Bachelor's from Pune Institute Of Computer Technology in Electronics and Telecommunication with CGPA of 9.26/10.</p1>
-                <div class="tab-titles">
-                    <p class="tab-links active-link">Skills</p>
-                </div>
-                <div class="tab-contents">
-                    <ul>
-                        <li><span>Languages:</span><br> Python, Java, Scala, C, C++, C#, SQL, HTML, Javascript, CSS.</li>
-                        <li><span>Tools:</span><br> Appium, Power BI, Scikit-learn, MongoDB, Selenium, Postman, Matlab, Azure, Tableau, Slack, PyTorch, XGBoost, Hadoop, Google
-                            Cloud, PySpark, Spark, GitHub, Linux, Firebase, AWS, GCP, Excel, JDK, React.</li>
-                        <li><span>Skills:</span><br> Data Structures and Algorithms, Data Analytics, Natural Language Processing, Database Management,
-                            Machine Learning, Computer Vision, Data Visualization, API Design, Rest APIs, Predictive Analytics,
-                            Communication skills, Agile, NoSQL, Statistics, Cloud Computing, Problem solving, Data Mining.</span></li>
-
-                    </ul>
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Manasi Thonte, a Software Engineer and Research Assistant with a Master’s in Applied Data Science from the University of Southern California (CGPA: 3.71/4.0). I specialize in designing scalable backend systems, distributed data pipelines, and production-grade machine learning infrastructure.</p>
+                <p class="about-paragraph">I hold a Bachelor's in Electronics & Telecommunication Engineering from Pune Institute Of Computer Technology with a CGPA of 9.26/10.</p>
+                <p class="about-paragraph">Across roles at USC Viterbi, AllyIn.ai, and HDFC Bank, I have built microservices, optimized data workflows, and deployed ML-driven applications in collaborative, high-impact environments. My work bridges strong foundations in Data Structures and Algorithms with real-world system design and performance optimization.</p>
+                
+                <div class="skills-wrapper">
+                    <div class="skills-category animate-in">
+                        <h3>Languages & Tools</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Scala</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">Golang</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="skills-category animate-in">
+                        <h3>ML & Data Science</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">XGBoost</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">SciPy</span>
+                            <span class="skill-tag">Tableau</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">LoRA</span>
+                            <span class="skill-tag">Sentence-BERT</span>
+                            <span class="skill-tag">LLMs</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                    <div class="skills-category animate-in">
+                        <h3>Big Data & Cloud</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Hadoop</span>
+                            <span class="skill-tag">PySpark</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">GCP</span>
+                            <span class="skill-tag">Azure ML</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">DevOps</span>
+                        </div>
+                    </div>
                 </div>
             </div>  
         </div>
     </div>
 </div>
 
-<!----------Experience------------>
-
 <div id="experience">
     <div class="container">
-        <h1 class="sub-title">My Experience</h1>
+        <h1 class="sub-title">My Work Experience</h1>
         <div class="experience-list">
-            <div>
-                <h2>USC Viterbi School of Engineering | Research Assistant<br>
-                    Sept 2024 - Present, Los Angeles, USA</h2>
-                <br>
-                <p>
-                    Constructing MRI preprocessing pipeline with FSL for bias field correction, intensity normalisation and
-skull stripping.
-                </p>
-                <br>
-                <p>
-                    Segmented imaging data to optimize processes and improve downstream deep learning model efficiency.
-                </p>    
+            <div class="experience-card">
+                <div class="experience-icon"><i class="fas fa-robot"></i></div>
+                <h2>Software Engineer - ML (Co-op)</h2>
+                <h3>AllyIn.ai</h3>
+                <p class="experience-date"><i class="far fa-calendar-alt"></i> Aug 2025 - Dec 2025 | Los Angeles, USA</p>
+                <ul class="experience-points">
+                    <li>Engineered scalable hardware spec parsing pipelines achieving 90% unit test coverage using Dockerized environments.</li>
+                    <li>Designed visualization modules on structured datasets, reducing analysis time by 30% through optimized backend APIs.</li>
+                    <li>Developed a Python-based NLP system to audit 120+ contracts with robust error handling and logging.</li>
+                    <li>Built a telemetry microservice for AI workloads, cutting cost tracking time significantly.</li>
+                </ul>
             </div>
-            <div>
-                <h2>University of Southern California | Student Researcher<br>
-                    Jan 2024 - May 2024, Los Angeles, USA</h2>
-                <br>
-                <p>
-                    Led a team of 5 to create synthetic data and implement innovative data generation techniques, improving model performance for Large Language Models.
-                </p>
-                <br>
-                <p>
-                    Refined data synthesis methodologies, resulting in high-impact datasets.
-                </p>    
+            <div class="experience-card">
+                <div class="experience-icon"><i class="fas fa-brain"></i></div>
+                <h2>Machine Learning Engineer Intern</h2>
+                <h3>AllyIn.ai</h3>
+                <p class="experience-date"><i class="far fa-calendar-alt"></i> Jun 2025 - Aug 2025 | Los Angeles, USA</p>
+                <ul class="experience-points">
+                    <li>Implemented an LLM-based contract evaluation system, shortening review time by 40% and scoring across 12 criteria.</li>
+                    <li>Developed a Python-based data pipeline to extract and structure 100+ financial filings.</li>
+                    <li>Built a RAG system with web crawling and vector indexing, reducing query latency by 35% while maintaining relevance.</li>
+                    <li>Constructed a modular analytics dashboard for LLM observability, facilitating 30% faster error identification.</li>
+                </ul>
             </div>
-            <div>
-                <h2>HDFC Bank | Data Analyst<br>
-                    Aug 2022 - Nov 2023, Mumbai, India</h2>
-                <br>
-                <p>
-                    Developed mobile app automation testing scripts using Python and Appium, improving testing efficiency by 30% and reducing delivery timelines by 25%.
-                </p> 
-                <br>   
-                <p>
-                    Directed automation testing by integrating Selenium with Java, reducing feedback loops by 40% during development cycles.
-                </p>
-                <br>
-                <p>
-                    Spearheaded migration of 1,500+ Jira projects from Server to Data Center with 100% data integrity.
-                </p>
+            <div class="experience-card">
+                <div class="experience-icon"><i class="fas fa-microscope"></i></div>
+                <h2>Research Assistant</h2>
+                <h3>USC Viterbi School of Engineering</h3>
+                <p class="experience-date"><i class="far fa-calendar-alt"></i> Sep 2024 - May 2025 | Los Angeles, USA</p>
+                <ul class="experience-points">
+                    <li>Architected an end-to-end MRI pipeline, enabling extraction of 200+ neuroanatomical features from 500+ brain scans.</li>
+                    <li>Integrated FSL-based normalization and artifact correction into MRI pipeline, enhancing signal quality by 30%.</li>
+                    <li>Performed dimensionality reduction with PCA and t-SNE, identifying top 100 biomarkers linked to autism diagnosis.</li>
+                    <li>Trained and fine-tuned a PyTorch-based CNN, achieving 94% accuracy in classifying autism spectrum disorder.</li>
+                </ul>
             </div>
-            
+            <div class="experience-card">
+                <div class="experience-icon"><i class="fas fa-chart-line"></i></div>
+                <h2>Data Analyst</h2>
+                <h3>HDFC Bank</h3>
+                <p class="experience-date"><i class="far fa-calendar-alt"></i> Aug 2022 - Nov 2023 | Mumbai, India</p>
+                <ul class="experience-points">
+                    <li>Streamlined model deployment pipelines with Selenium & DevOps, accelerating feedback cycles by 40%.</li>
+                    <li>Engineered data validation using Java and SQL, boosting data pipeline efficiency by 30% in production workflows.</li>
+                    <li>Programmed a Python alerting service for ML pipelines, cutting undetected failures by 40% through monitoring.</li>
+                    <li>Optimized distributed data pipelines to lower runtime by 35%, accelerating analytics workflows and reporting latency.</li>
+                </ul>
+            </div>
         </div>
-
     </div>
 </div>   
-
-<!-----------Project--------->
 
 <div id="projects">
     <div class="container">
         <h1 class="sub-title">My Projects</h1>
         <div class="project-list">
             <div class="project_work">
-                <img src="Images/project-1.png">
+                <img src="Images/project-1.png" alt="Commons App project screenshot" loading="lazy">
                 <div class="layer">
-                    <h3>ChatDB</h3>
-                    <p>
-                        The project, ChatDB, aims to develop an interactive application inspired by ChatGPT that assists users in querying database systems. Unlike traditional database interfaces, ChatDB provides an intuitive platform for users to interact with databases through natural language or pre-defined query patterns. The system supports both SQL and NoSQL databases, enabling users to explore datasets and generate sample queries.
-                    </p>
+                    <h3>Commons App</h3>
+                    <p>Spearheaded a full-stack web application at AthenaHacks Hackathon with 12 REST APIs, JWT authentication, and real-time messaging. Orchestrated custom matching algorithm with 8-point scoring achieving &lt;200ms response time.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">MongoDB</span>
+                        <span class="project-tag">REST APIs</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/manasithonte" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="project-link" aria-label="Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
                 </div>
             </div>
             <div class="project_work">
-                <img src="Images/project-2.png">
+                <img src="Images/project-2.png" alt="Real-Time Collaborative Whiteboard screenshot" loading="lazy">
                 <div class="layer">
-                    <h3>NBA Analytics</h3>
-                    <p>
-                        This project focused on analyzing 33 advanced NBA player metrics to uncover insights into player efficiency, performance trends, and game dynamics. Data was collected and processed through web scraping to ensure a comprehensive evaluation of player statistics.
-                    </p>
+                    <h3>Real-Time Whiteboard</h3>
+                    <p>Developed real-time collaborative whiteboard using React frontend and Node.js backend. Optimized RESTful CRUD APIs and integrated Socket.IO for multi-user communication with sub-second latency.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">MERN Stack</span>
+                        <span class="project-tag">Socket.IO</span>
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Real-Time</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/manasithonte" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="project-link" aria-label="Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
                 </div>
             </div>
             <div class="project_work">
-                <img src="Images/Project-3.png">
+                <img src="Images/Project-3.png" alt="Mask Detection project screenshot" loading="lazy">
                 <div class="layer">
-                    <h3>Mask Detection and Health Monitoring System</h3>
-                    <p>
-                        This project involved designing and simulating a cost-effective and easy-to-implement system for mask detection, temperature monitoring, and oxygen level measurement using a microcontroller. The system was developed to support preventive measures against COVID-19 by ensuring compliance with essential health protocols.
-                    </p>
+                    <h3>Mask Detection & IoT</h3>
+                    <p>Designed a cost-effective system for mask detection, temperature monitoring, and oxygen level measurement using a microcontroller to support preventive measures against COVID-19.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Computer Vision</span>
+                        <span class="project-tag">IoT</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">ML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/manasithonte" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="project-link" aria-label="Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!----------contact-------->
+
+<div id="education">
+    <div class="container">
+        <h1 class="sub-title">Education</h1>
+        <div class="education-list">
+            <div class="education-card">
+                <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h2>Master's in Applied Data Science</h2>
+                <h3>University Of Southern California</h3>
+                <p class="education-date"><i class="far fa-calendar-alt"></i> Jan 2024 - Dec 2025</p>
+                <p class="education-gpa"><i class="fas fa-star"></i> CGPA: 3.66/4.0</p>
+                <p class="education-location"><i class="fas fa-map-marker-alt"></i> Los Angeles, USA</p>
+            </div>
+            <div class="education-card">
+                <div class="education-icon"><i class="fas fa-university"></i></div>
+                <h2>Bachelor of Engineering in Electronics</h2>
+                <h3>Pune Institute Of Computer Technology</h3>
+                <p class="education-date"><i class="far fa-calendar-alt"></i> Aug 2018 - Jul 2022</p>
+                <p class="education-gpa"><i class="fas fa-star"></i> CGPA: 9.26/10.0</p>
+                <p class="education-location"><i class="fas fa-map-marker-alt"></i> Pune, India</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>   manasithonte18@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>   (+1)2136814083</p>
+                <p class="contact-info"><i class="fa-solid fa-envelope"></i>thonte@usc.edu</p>
+                <p class="contact-info"><i class="fa-solid fa-phone"></i> +12136814083</p>
                 <div class="social-icons">
-                    <a href="https://linkedin.com/in/manasithonte"><i class="fa-brands fa-linkedin"></i></i></a>
-                    <a href="https://github.com/manasithonte"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://linkedin.com/in/manasithonte" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/manasithonte" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <a href="images/Resume_.pdf" class="btn">Download Resume</a>
-
+                <a href="Images/Resume_.pdf" download class="btn btn-download"><i class="fas fa-download"></i> Download Resume</a>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your name" required>
-                    <input type="email" name="Email" placeholder="Your email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn">Submit</button>
+                <form name="submit-to-google-sheet" id="contact-form">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-submit">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+                    </button>
                 </form>
                 <span id="msg"></span>
             </div>
-                
         </div>
     </div>
     <div class="copyright">
-        <p>© Manasi Thonte 2025</p>
+        <p>© 2025 Manasi Thonte. All rights reserved.</p>
     </div>
 </div>
+
+<button id="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
 <script>
-    const scriptURL = ' https://script.google.com/macros/s/AKfycbxDLOUAnor-ALBKxn8XLm6aNuYl5dW8kVtzAFcDyZar3gAtbsQmXhqelAaWfJAb2FXYkg/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
+    // --- Sticky Navbar Logic ---
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', function() {
+        nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // --- Smooth Scrolling ---
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                // Offset calculation for sticky nav
+                const headerOffset = 80; 
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (window.innerWidth <= 768) {
+                    document.getElementById('nav-menu').style.right = '-200px';
+                }
+            }
+        });
+    });
+
+    // --- Mobile Menu Toggle ---
+    const menuIcon = document.getElementById('menu-icon');
+    const closeMenu = document.getElementById('close-menu');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (menuIcon) {
+        menuIcon.addEventListener('click', () => {
+            navMenu.style.right = '0';
+        });
+    }
+
+    if (closeMenu) {
+        closeMenu.addEventListener('click', () => {
+            navMenu.style.right = '-200px';
+        });
+    }
+
+    // --- Scroll to Top Button ---
+    const scrollTopBtn = document.getElementById('scroll-top');
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            scrollTopBtn.classList.add('show');
+        } else {
+            scrollTopBtn.classList.remove('show');
+        }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // --- Scroll Reveal Animation ---
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-in');
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.experience-card, .project_work, .education-card, .skills-category').forEach(el => {
+        observer.observe(el);
+    });
+
+    // --- Contact Form ---
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxDLOUAnor-ALBKxn8XLm6aNuYl5dW8kVtzAFcDyZar3gAtbsQmXhqelAaWfJAb2FXYkg/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById('msg');
+    const btnText = document.querySelector('.btn-text');
+    const btnLoading = document.querySelector('.btn-loading');
 
     form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => { 
-            msg.innerHTML="Message sent successfully!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-    })
-    .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+        e.preventDefault();
+        btnText.style.display = 'none';
+        btnLoading.style.display = 'inline-block';
+        
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => { 
+                btnText.style.display = 'inline-block';
+                btnLoading.style.display = 'none';
+                msg.innerHTML = "Message sent successfully!";
+                msg.style.color = '#61b752';
+                setTimeout(() => msg.innerHTML = '', 5000);
+                form.reset();
+            })
+            .catch(error => {
+                btnText.style.display = 'inline-block';
+                btnLoading.style.display = 'none';
+                msg.innerHTML = 'Error sending message.';
+                msg.style.color = '#ff004f';
+            });
+    });
 
+    // --- Active Link Highlight ---
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const sections = document.querySelectorAll('div[id]');
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 150) {
+                current = section.getAttribute('id');
+            }
+        });
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
 </body>
 </html>
